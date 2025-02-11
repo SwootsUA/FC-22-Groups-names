@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * Validates group name and returns true or false, always false if input is not a string
- * @param {string} groupName - Name of the group to be tested
- * @returns {boolean}
+ * Validates group name and logs result
+ * @param {Array} groupName - Array of names of the group to be tested
  */
-function isValidGroupName(groupName) {
-    if (typeof groupName !== 'string') return false;
-    return groupName.match(/(fd|fm|fe|FD|FM|FE)20\d{2}(-\d+)?$/g) !== null;
+function validateGroupNames(groupNames) {
+    for (const name of groupNames) {
+        console.log(`${/(fd|fm|fe|FD|FM|FE)20\d{2}(-\d+)?$/.test(name)? 'Success' : 'Error'} ${name}`);
+    }
 }
 
 const arrGroups = [
@@ -24,8 +24,4 @@ const arrGroups = [
     'FM2022-1',
 ];
 
-for (const groupName of arrGroups) {
-    console.log(
-        `${isValidGroupName(groupName) ? 'Success' : 'Error'} ${groupName}`
-    );
-}
+validateGroupNames(arrGroups);
