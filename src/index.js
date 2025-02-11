@@ -2,7 +2,7 @@
 
 /**
  * Validates group name and returns true or false, always false if input is not a string
- * @param {string} groupName
+ * @param {string} groupName - Name of the group to be tested
  * @returns {boolean}
  */
 function isValidGroupName(groupName) {
