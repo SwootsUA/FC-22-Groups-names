@@ -7,7 +7,7 @@
  */
 function isValidGroupName(groupName) {
     if (typeof groupName !== 'string') return false;
-    return groupName.match(/(fd|fm|fe|FD|FM|FE)20\d{2}(-\d+)?$/g);
+    return groupName.match(/(fd|fm|fe|FD|FM|FE)20\d{2}(-\d+)?$/);
 }
 
 const arrGroups = [
