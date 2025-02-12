@@ -6,7 +6,7 @@
  */
 function validateGroupNames(groupNames) {
     for (const name of groupNames) {
-        console.log(`${/(fd|fm|fe|FD|FM|FE)20\d{2}(-\d+)?$/.test(name)? 'Success' : 'Error'} ${name}`);
+        console.log(`${/(fd|fm|fe|FD|FM|FE)20\d{2}(-\d+)?$/.test(name) ? 'Success' : 'Error'} ${name}`);
     }
 }
 
