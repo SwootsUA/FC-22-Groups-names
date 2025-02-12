@@ -3,3 +3,6 @@
 !.gitignore
 
 node_modules/
+
+# JSDoc compile folder
+out/

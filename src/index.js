@@ -2,11 +2,11 @@
 
 /**
  * Validates group name and logs result
- * @param {Array} groupName - Array of names of the group to be tested
+ * @param {string[]} groupName - Array of groups names to be tested
  */
 function validateGroupNames(groupNames) {
     for (const name of groupNames) {
-        console.log(`${/(fd|fm|fe|FD|FM|FE)20\d{2}(-\d+)?$/.test(name) ? 'Success' : 'Error'} ${name}`);
+        console.log(`${/^(fd|fm|fe|FD|FM|FE)20\d{2}(-\d+)?$/.test(name) ? 'Success' : 'Error'} ${name}`);
     }
 }
 
